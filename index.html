@@ -11,8 +11,8 @@
     <script src="app.js"></script>
 </head>
 <body ng-controller="mainController" >
-  <img src="{{produce[0].image}}"></img>
-  <p>{{produce[0].name}}</p>
+  <img src="{{produce[current].image}}"></img>
+  <p>{{produce[current].name}}</p>
 <form name = "codeGuessForm" ng-submit = "checkCodeGuess()" >
   <input type="text" placeholder = "Guess PLU code" ng-model = "userGuess">
 </form>
